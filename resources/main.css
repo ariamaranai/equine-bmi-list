@@ -1,0 +1,53 @@
+.i {
+  display: none
+}
+a {
+  color: #bbb;
+  margin-left: 4;
+  text-decoration-color: #999;
+  text-decoration-skip-ink: none
+}
+a:first-child {
+  width: 120
+}
+::-webkit-scrollbar {
+  width: 20
+}
+::-webkit-scrollbar-thumb {
+  background-color: #666
+}
+p a {
+  font-family: hiragino kaku gothic pro,meiryo,sans-serif
+}
+p {
+  display: flex;
+  cursor: default;
+  height: 32;
+  margin: 0
+}
+#s {
+  background-color: #111;
+  position: sticky;
+  top: 0
+}
+#i {
+  color: #cb0;
+  display: contents
+}
+i {
+  color: #999;
+  display: contents
+}
+input {
+  all: unset;
+  flex-grow: 1
+}
+body {
+  background-color: #111;
+  overflow-y: scroll;
+  color: #bbb;
+  margin: 0 auto 32;
+  font: 12px/32px menlo,consolas,monospace;
+  white-space: pre;
+  width: 560
+}
