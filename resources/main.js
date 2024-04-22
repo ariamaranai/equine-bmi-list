@@ -5,4 +5,4 @@ a.oninput =n=> {
   while (e[r].className = e[r].textContent.includes(n.target.value) ? (++t,'') : 'a', --r);
   p.textContent = t
 },
-r.onchange =n=> open("//ariamaranai.github.io/equine-height-list/" + ["","weight/","bmi/"][r.selectedIndex])
+r.onchange =n=> open("//ariamaranai.github.io/equine-bmi-list/" + ["hh.htm","wt.htm","bmi.htm"][r.selectedIndex])
