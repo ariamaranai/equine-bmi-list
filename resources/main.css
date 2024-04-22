@@ -1,44 +1,47 @@
+.s {
+  display: none
+}
 s {
+  display: contents;
+  font-family: consolas,monospace;
+  word-spacing: 8
+}
+a {
+  display: inline-block;
+  color: #bbb;
   text-decoration: unset;
-  font-family: arial, sans-serif
+  font-family: inherit;
+  width: 120
 }
 ::-webkit-scrollbar {
   width: 20
-}
-a {
-  width: 120;
-  color: #bbb;
-  text-decoration: unset;
-  font-family: arial, sans-serif
 }
 ::-webkit-scrollbar-thumb {
   background-color: #666
 }
 p {
-  display: flex;
-  text-indent: 8;
-  height: 32;
+  height: 24;
   text-align: initial;
+  font-family: arial,sans-serif;
   margin: 0
 }
-#p {
-  display: contents;
+#s {
   color: #cb0
 }
-#r {
+#b {
   background-color: #222;
-  width: 72;
-  margin: 4;
-  height: 24;
   border: 1px solid #666;
+  width: 72;
   color: #bbb;
-  font: unset;
+  margin-right: 4;
   outline: 0
 }
 #y {
   background-color: #111;
-  width: min(100vw, 472px);
-  position: sticky;
+  width: min(100vw, 480px);
+  display: flex;
+  position: fixed;
+  gap: 4px;
   top: 0
 }
 #a {
@@ -48,13 +51,11 @@ p {
 body {
   background-color: #111;
   width: 472;
-  margin: 0 auto 32;
-  text-align: center;
   color: #bbb;
-  font: 12px/32px menlo,consolas,monospace;
+  margin: 24 auto;
+  text-align: center;
+  font: 12px/2 consolas,monospace;
   font-feature-settings: 'palt';
-  overflow: clip scroll
-}
-.a {
-  display: none
+  overflow-y: scroll;
+  padding-left: 8
 }

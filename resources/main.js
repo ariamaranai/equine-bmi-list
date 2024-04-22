@@ -2,7 +2,7 @@ addEventListener('wheel', n => n.preventDefault(document.body.scrollTop += n.del
 ondragstart =n=> !1,
 a.oninput =n=> {
   let e = document.body.children, r = $total, t = 0;
-  while (e[r].className = e[r].textContent.includes(n.target.value) ? (++t,'') : 'a', --r);
-  p.textContent = t
+  while (e[r].className = e[r].textContent.includes(n.target.value) ? (++t,'') : 's', --r);
+  s.textContent = t
 },
-r.onchange =n=> open("//ariamaranai.github.io/equine-bmi-list/" + ["hh.htm","wt.htm","bmi.htm"][r.selectedIndex])
+b.onchange =n=> open('//ariamaranai.github.io/equine-bmi-list/' + ['','wt.htm','bmi.htm'][b.selectedIndex])

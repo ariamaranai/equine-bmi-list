@@ -9,23 +9,23 @@ let hhHTML = (await Bun.file("main.htm").text()).replaceAll(/\n/g, "").replaceAl
 let wtHTML = hhHTML.replace("<option>Weight", "<option selected>Weight");
 let bmiHTML = hhHTML.replace("<option>Bmi", "<option selected>Bmi");
 let hrefing =href=> href[12] == "j" ? href.slice(-11) : "//www.pedigreequery.com/" + href.slice(30).split("+").map(v => v[0].toUpperCase() + v.slice(1)).join("+");
-let footer = `</p>by <a href=//ariamaranai.github.io/ style=font-family:unset>@ariamaranai<script>${js}</script>`;
+let footer = `</p>by <a href=//ariamaranai.github.io/ style=display:contents>@ariamaranai</a><script>${js}</script>`;
 
 for (let i = 0; i < heights.length; ++i) {
   {
     let item = heights[i];
     let { name: name, href: href, sname: sname, gname: gname, hh: hh, wt: wt, bmi: bmi } = item;
-    hhHTML += `<p><a href=${hrefing(href)}>${name}</a>${hh} ${wt} ${bmi.toFixed(1)}<s>${sname}・${gname}</s>`;
+    hhHTML += `<p><a href=${hrefing(href)}>${name}</a><s>${hh} ${wt} ${bmi.toFixed(1)} </s>${sname}・${gname}`;
   }
   {
     let item = wts[i];
     let { name: name, href: href, sname: sname, gname: gname, hh: hh, wt: wt, bmi: bmi } = item;
-    wtHTML += `<p><a href=${hrefing(href)}>${name}</a>${hh} ${wt} ${bmi.toFixed(1)}<s>${sname}・${gname}</s>`;
+    wtHTML += `<p><a href=${hrefing(href)}>${name}</a><s>${hh} ${wt} ${bmi.toFixed(1)} </s>${sname}・${gname}`;
   }
   {
     let item = bmis[i];
     let { name: name, href: href, sname: sname, gname: gname, hh: hh, wt: wt, bmi: bmi } = item;
-    bmiHTML += `<p><a href=${hrefing(href)}>${name}</a>${hh} ${wt} ${bmi.toFixed(1)}<s>${sname}・${gname}</s>`;
+    bmiHTML += `<p><a href=${hrefing(href)}>${name}</a><s>${hh} ${wt} ${bmi.toFixed(1)} </s>${sname}・${gname}`;
   }
 }
 
@@ -33,7 +33,7 @@ hhHTML += footer;
 wtHTML += footer;
 bmiHTML += footer;
 
-Bun.write("../hh.htm", hhHTML);
+Bun.write("../index.htm", hhHTML);
 Bun.write("../wt.htm", wtHTML);
 Bun.write("../bmi.htm", bmiHTML);
 console.log(`size: ${Bun.gzipSync(Buffer.from(hhHTML)).length}`);
