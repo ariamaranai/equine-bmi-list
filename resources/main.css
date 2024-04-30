@@ -22,7 +22,7 @@ p {
   margin: 0
 }
 #p {
-  background-color: #111;
+  background-color: #222;
   position: sticky;
   top: 0
 }
@@ -50,7 +50,7 @@ u {
 }
 :root {
   color: #bbb;
-  margin: -8 max(0px,calc(50% - 232px)) 32;
+  margin: -8 max(0px,calc(50% - 212px)) 32;
   text-align: center;
   font: 12px/32px menlo,consolas,monospace;
   font-feature-settings: 'palt';
