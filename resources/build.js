@@ -15,17 +15,17 @@ for (let i = 0; i < heights.length; ++i) {
   {
     let item = heights[i];
     let { name: name, href: href, sname: sname, gname: gname, hh: hh, wt: wt, bmi: bmi } = item;
-    hhHTML += `<p><a href=${hrefing(href)}>${name}</a><s>${hh} ${wt} ${bmi.toFixed(1)} </s>${sname}・${gname}`;
-  }
+    hhHTML += `<p><a href=${hrefing(href)}>${name}</a>${hh} ${wt}<u>(${bmi.toFixed(1)})</u><i>${sname}\u000a${gname}</i>`;
+  }  
   {
     let item = wts[i];
     let { name: name, href: href, sname: sname, gname: gname, hh: hh, wt: wt, bmi: bmi } = item;
-    wtHTML += `<p><a href=${hrefing(href)}>${name}</a><s>${hh} ${wt} ${bmi.toFixed(1)} </s>${sname}・${gname}`;
+    wtHTML += `<p><a href=${hrefing(href)}>${name}</a>${hh} ${wt}<u>(${bmi.toFixed(1)})</u><i>${sname}\u000a${gname}</i>`;
   }
   {
     let item = bmis[i];
     let { name: name, href: href, sname: sname, gname: gname, hh: hh, wt: wt, bmi: bmi } = item;
-    bmiHTML += `<p><a href=${hrefing(href)}>${name}</a><s>${hh} ${wt} ${bmi.toFixed(1)} </s>${sname}・${gname}`;
+    bmiHTML += `<p><a href=${hrefing(href)}>${name}</a>${hh} ${wt}<u>(${bmi.toFixed(1)})</u><i>${sname}\u000a${gname}</i>`;
   }
 }
 

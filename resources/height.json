@@ -105,8 +105,7 @@
     "gname": "Brian's Time",
     "hh": 158,
     "wt": 476,
-    "bmi": 190.7,
-    "trust": true
+    "bmi": 190.7
   },
   {
     "name": "ノボジャック",
@@ -1751,7 +1750,6 @@
     "href": "https://www.jbis.or.jp/horse/0001228749/",
     "sname": "Kitten's Joy",
     "gname": "Sunday Silence",
-    "ghref": "https://www.jbis.or.jp/horse/0000333862/",    
     "hh": 164,
     "wt": 501,
     "bmi": 186.3

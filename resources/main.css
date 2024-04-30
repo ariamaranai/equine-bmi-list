@@ -1,61 +1,59 @@
-.s {
+
+a {
+  width: 116;
+  text-underline-offset: 2px;
+  text-decoration-color: #999;
+  font-family: arial,sans-serif;
+  text-decoration-skip-ink: none
+}
+i {
+  white-space: pre;
+  font: 12px/1 arial,sans-serif;
+  color: #aaa;
+  margin: 4 0 0 8
+}
+.p {
   display: none
 }
-s {
-  display: contents;
-  font-family: consolas,monospace;
-  word-spacing: 8
-}
-a {
-  display: inline-block;
-  color: #bbb;
-  text-decoration: unset;
-  font-family: inherit;
-  width: 120
-}
-::-webkit-scrollbar {
-  width: 20
-}
-::-webkit-scrollbar-thumb {
-  background-color: #666
-}
 p {
-  height: 24;
+  display: flex;
+  height: 32;
   text-align: initial;
-  font-family: arial,sans-serif;
   margin: 0
 }
-#s {
-  color: #cb0
+#p {
+  background-color: #111;
+  position: sticky;
+  top: 0
 }
-#b {
+#i {
   background-color: #222;
-  border: 1px solid #666;
-  width: 72;
   color: #bbb;
-  margin-right: 4;
+  margin: 4;
+  border: 1px solid #666;
   outline: 0
 }
-#y {
-  background-color: #111;
-  width: min(100vw, 480px);
-  display: flex;
-  position: fixed;
-  gap: 4px;
-  top: 0
+#u {
+  letter-spacing: 0
 }
 #a {
   all: unset;
+  font-family: arial,sans-serif;
   flex-grow: 1
 }
-body {
-  background-color: #111;
-  width: 472;
+:first-line {
+  color: #bbb
+}
+u {
+  display: contents;
+  letter-spacing: -1
+}
+:root {
   color: #bbb;
-  margin: 24 auto;
+  margin: -8 max(0px,calc(50% - 232px)) 32;
   text-align: center;
-  font: 12px/2 consolas,monospace;
+  font: 12px/32px menlo,consolas,monospace;
   font-feature-settings: 'palt';
-  overflow-y: scroll;
-  padding-left: 8
+  color-scheme: Dark;
+  overflow: clip scroll
 }
