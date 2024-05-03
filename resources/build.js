@@ -13,18 +13,15 @@ let footer = `</p><a href=//ariamaranai.github.io/ style=display:contents>@ariam
 
 for (let i = 0; i < heights.length; ++i) {
   {
-    let item = heights[i];
-    let { name: name, href: href, sname: sname, gname: gname, hh: hh, wt: wt, bmi: bmi } = item;
+    let { name, href, sname, gname, hh, wt, bmi } = heights[i];
     hhHTML += `<p><a href=${hrefing(href)}>${name}</a>${hh} ${wt}(${bmi.toFixed(1)})<i>${sname}\u000a${gname}</i>`;
   }  
   {
-    let item = wts[i];
-    let { name: name, href: href, sname: sname, gname: gname, hh: hh, wt: wt, bmi: bmi } = item;
+    let { name, href, sname, gname, hh, wt, bmi } = wts[i];
     wtHTML += `<p><a href=${hrefing(href)}>${name}</a>${hh} ${wt}(${bmi.toFixed(1)})<i>${sname}\u000a${gname}</i>`;
   }
   {
-    let item = bmis[i];
-    let { name: name, href: href, sname: sname, gname: gname, hh: hh, wt: wt, bmi: bmi } = item;
+    let { name, href, sname, gname, hh, wt, bmi } = bmis[i];
     bmiHTML += `<p><a href=${hrefing(href)}>${name}</a>${hh} ${wt}(${bmi.toFixed(1)})<i>${sname}\u000a${gname}</i>`;
   }
 }
