@@ -1,7 +1,7 @@
 
 a {
-  color: #bbb;
   width: 116;
+  color: #bbb;
   font-size: 12;
   font-family: arial,sans-serif;
   text-decoration-color: #999;
@@ -17,13 +17,14 @@ p {
   margin: 0
 }
 #p {
-  background-color: #222;
-  position: sticky;
+  background-color: #111;
   font-size: 12;
+  position: sticky;
   top: 0
 }
 #i {
-  background-color: #222;
+  background-color: #111;
+  font-size: 12;
   color: #bbb;
   margin: 4;
   border: 1px solid #666;
@@ -36,8 +37,8 @@ p {
   flex-grow: 1
 }
 i {
-  color: #aaa;
   white-space: pre;
+  color: #aaa;
   margin: 4 0 0 12;
   font-style: unset;
   font-size: 12;
@@ -45,6 +46,7 @@ i {
   line-height: 1
 }
 :root {
+  background-color: #111;
   color: #bbb;
   margin: -8 max(0px,calc(50% - 212px)) 32;
   text-align: center;

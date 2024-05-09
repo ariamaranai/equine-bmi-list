@@ -6,8 +6,8 @@ let total = heights.length;
 let js = (await Bun.file("main.js").text()).replaceAll(/(?<!let|new)\s/g, "").replace("async", "async ").replace("await", "await ").replaceAll("$total", total);
 let hhCSS = (await Bun.file("main.css").text()).replaceAll(/\n| {2}|\s(?={)|(?<=\:)\s/g, "");
 let hhHTML = (await Bun.file("main.htm").text()).replaceAll(/\n/g, "").replaceAll("$total", total).replace("/*css*/", hhCSS);
-let wtHTML = hhHTML.replace("<option>Weight", "<option selected>Weight");
-let bmiHTML = hhHTML.replace("<option>BMI", "<option selected>BMI");
+let wtHTML = hhHTML.replace("<option>Wt", "<option selected>Wt").replace("- Height", "- Weight");
+let bmiHTML = hhHTML.replace("<option>BMI", "<option selected>BMI").replace("- Height", "- BMI");
 let hrefing =href=> href[12] == "j" ? href.slice(-11) : "//www.pedigreequery.com/" + href.slice(30).split("+").map(v => v[0].toUpperCase() + v.slice(1)).join("+");
 let footer = `</p><a href=//ariamaranai.github.io/>@ariamaranai</a><script>${js}</script>`;
 
