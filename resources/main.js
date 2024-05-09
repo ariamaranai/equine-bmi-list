@@ -5,4 +5,4 @@ a.oninput =n=> {
   while (e[r].className = e[r].textContent.includes(n.target.value) ? (++t,'') : 'p', --r);
   u.textContent = t
 },
-i.onchange =n=> (location.href = '//ariamaranai.github.io/equine-bmi-list/' + ['','wt.htm','bmi.htm'][i.selectedIndex])
+i.onchange =n=> (location.href = '//ariamaranai.github.io/equine-bmi-list/' + ['','wt/','bmi/'][i.selectedIndex])

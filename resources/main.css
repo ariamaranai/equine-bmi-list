@@ -1,11 +1,10 @@
 
 a {
+  color: #bbb;
   width: 116;
-  text-underline-offset: 2px;
-  text-decoration-color: #999;
   font-size: 12;
   font-family: arial,sans-serif;
-  letter-spacing: 0;
+  text-decoration-color: #999;
   text-decoration-skip-ink: none
 }
 .p {
@@ -15,7 +14,6 @@ p {
   display: flex;
   height: 32;
   text-align: initial;
-  letter-spacing: -1;
   margin: 0
 }
 #p {
@@ -35,25 +33,20 @@ p {
   all: unset;
   font-size: 12;
   font-family: arial,sans-serif;
-  flex-grow: 1;
-  letter-spacing: 0
-}
-:first-line {
-  color: #bbb
+  flex-grow: 1
 }
 i {
   color: #aaa;
-  line-height: 14px;
   white-space: pre;
   margin: 4 0 0 12;
   font-style: unset;
   font-size: 12;
   font-family: arial,sans-serif;
-  letter-spacing: 0
+  line-height: 1
 }
 :root {
   color: #bbb;
-  margin: -8 max(0px,calc(50% - 214px)) 32;
+  margin: -8 max(0px,calc(50% - 212px)) 32;
   text-align: center;
   font-size: 14;
   font-family: menlo,consolas,monospace;

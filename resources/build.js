@@ -9,13 +9,13 @@ let hhHTML = (await Bun.file("main.htm").text()).replaceAll(/\n/g, "").replaceAl
 let wtHTML = hhHTML.replace("<option>Weight", "<option selected>Weight");
 let bmiHTML = hhHTML.replace("<option>BMI", "<option selected>BMI");
 let hrefing =href=> href[12] == "j" ? href.slice(-11) : "//www.pedigreequery.com/" + href.slice(30).split("+").map(v => v[0].toUpperCase() + v.slice(1)).join("+");
-let footer = `</p><a href=//ariamaranai.github.io/ style=display:contents>@ariamaranai</a><script>${js}</script>`;
+let footer = `</p><a href=//ariamaranai.github.io/>@ariamaranai</a><script>${js}</script>`;
 
 for (let i = 0; i < heights.length; ++i) {
   {
     let { name, href, sname, gname, hh, wt, bmi } = heights[i];
     hhHTML += `<p><a href=${hrefing(href)}>${name}</a>${hh} ${wt}(${bmi.toFixed(1)})<i>${sname}\u000a${gname}</i>`;
-  }  
+  }
   {
     let { name, href, sname, gname, hh, wt, bmi } = wts[i];
     wtHTML += `<p><a href=${hrefing(href)}>${name}</a>${hh} ${wt}(${bmi.toFixed(1)})<i>${sname}\u000a${gname}</i>`;
@@ -31,6 +31,6 @@ wtHTML += footer;
 bmiHTML += footer;
 
 Bun.write("../index.htm", hhHTML);
-Bun.write("../wt.htm", wtHTML);
-Bun.write("../bmi.htm", bmiHTML);
+Bun.write("../wt/index.htm", wtHTML);
+Bun.write("../bmi/index.htm", bmiHTML);
 console.log(`size: ${Bun.gzipSync(Buffer.from(hhHTML)).length}`);
