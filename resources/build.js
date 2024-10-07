@@ -1,4 +1,5 @@
-import heights from "./height.json";
+import heights from "./bmi.json";
+
 let hrefs = heights.map(v => v.href);
 let toIndexOf =v=> hrefs.indexOf(v.href) + 1;
 let hrefing =href=> href[12] == "j" ? href.slice(-11) : "//www.pedigreequery.com/" + href.slice(30).split("+").map(v => v[0].toUpperCase() + v.slice(1)).join("+");
