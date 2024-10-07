@@ -1,0 +1,53 @@
+p {
+  display: flex;
+  height: 36;
+  box-sizing: border-box;
+  border-bottom: 1px solid #555;
+  margin: 0;
+  Color: #bbb
+}
+i {
+  White-space: pre;
+  font: 12px/14px arial,sans-serif;
+  margin: 4 0 0 12
+}
+.t {
+  background-Color: #111;
+  top: 0;
+  position: sticky;
+  font-size: 12
+}
+.t * {
+  font-size: 12
+}
+s {
+  display: contents;
+  font-size: 11
+}
+a {
+  text-indent: 4;
+  text-decoration: unset;
+  font-family: arial,sans-serif;
+  font-size: 12;
+  width: 120;
+  Color: #bbb
+}
+select {
+  background-Color: #111;
+  margin: 4;
+  border: 1px solid #555;
+  outline: 0;
+  Color: #bbb
+}
+input {
+  all: unset;
+  font-family: arial,sans-serif;
+  flex-grow: 1
+}
+:root {
+  font: 14px/36px menlo,consolas,monospace;
+  font-feature-settings: "palt";
+  margin: -8 max(50% - 236px) 36;
+  Color-scheme: Dark;
+  overflow: clip scroll
+}
