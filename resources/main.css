@@ -9,7 +9,15 @@ p {
 i {
   White-space: pre;
   font: 12px/14px arial,sans-serif;
-  margin: 4 0 0 12
+  margin: 4 0 0 8
+}
+a {
+  text-indent: 4;
+  text-decoration: unset;
+  font-family: arial,sans-serif;
+  width: 120;
+  Color: #bbb;
+  font-size: 12
 }
 .t {
   background-Color: #111;
@@ -23,14 +31,6 @@ i {
 s {
   display: contents;
   font-size: 11
-}
-a {
-  text-indent: 4;
-  text-decoration: unset;
-  font-family: arial,sans-serif;
-  font-size: 12;
-  width: 120;
-  Color: #bbb
 }
 select {
   background-Color: #111;
