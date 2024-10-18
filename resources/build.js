@@ -1,4 +1,4 @@
-import heights from "./bmi.json";
+import heights from "../../equine-lib/bmi.json";
 
 let hrefs = heights.map(v => v.href);
 let toIndexOf =v=> hrefs.indexOf(v.href) + 1;
