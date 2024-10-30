@@ -45,7 +45,7 @@ input {
   flex-grow: 1
 }
 :root {
-  font: 14px/36px consolas,monospace;
+  font: 14px/36px consolas,menlo,monospace;
   font-feature-settings: "palt";
   margin: -8 max(0px, calc(50% - 236px)) 36;
   Color-scheme: Dark;
