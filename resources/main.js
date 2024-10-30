@@ -7,8 +7,11 @@ oninput =e=> {
   if (a ??= [...t.children], r = $total, l = (e = e.target).selectedIndex) {
     if (--l < 3)
       while (t.appendChild(a[$orders[l][r]]), --r);
-    else 
+    else
       (location.href = "//ariamaranai.github.io")
+  } else if (l == 0) {
+    alert(1);
+    while (t.prepend(a[r]), --r);
   } else {
     d ??= a.map(e => e.textContent),
     e = e.value, l = 0;
