@@ -1,53 +1,36 @@
 p {
   display: flex;
   height: 36;
+  line-height: 36px;
   box-sizing: border-box;
   border-bottom: 1px solid #555;
   margin: 0;
+  word-spacing: 4;
   Color: #bbb
 }
-i {
+u {
   White-space: pre;
-  font: 12px/14px arial,sans-serif;
+  word-spacing: 0;
+  line-height: 14px;
+  text-decoration: unset;
   margin: 4 0 0 8
 }
 a {
-  text-indent: 4;
-  text-decoration: unset;
-  font-family: arial,sans-serif;
   width: 120;
-  Color: #bbb;
-  font-size: 12
-}
-.t {
-  background-Color: #111;
-  top: 0;
-  position: sticky;
-  font-size: 12
-}
-.t * {
-  font-size: 12
+  word-spacing: 0;
+  text-decoration: unset;
+  text-indent: 4;
+  Color: #bbb
 }
 s {
   display: contents;
   font-size: 11
 }
-select {
-  background-Color: #111;
-  margin: 4;
-  border: 1px solid #555;
-  outline: 0;
-  Color: #bbb
-}
-input {
-  all: unset;
-  font-family: arial,sans-serif;
-  flex-grow: 1
-}
 :root {
-  font: 14px/36px consolas,menlo,monospace;
+  font-size: 12;
+  font-family: arial,sans-serif;
   font-feature-settings: "palt";
-  margin: -8 max(0px, calc(50% - 236px)) 36;
-  Color-scheme: Dark;
-  overflow: clip scroll
+  margin: -8 max(0px, calc(50% - 236px)) 120;
+  overflow: clip scroll;
+  Color-scheme: Dark
 }
