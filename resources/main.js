@@ -18,5 +18,5 @@ oninput =e=> {
 addEventListener("wheel", Number.isInteger(devicePixelRatio) ?
   e => e.preventDefault(t.scrollTop += e.deltaY > 0 ? 36 - t.scrollTop % 36 || 36 : - t.scrollTop % 36 || -36) :
   e => e.preventDefault(t.scrollTop += e.deltaY > 0 ? 36 : -36), { passive: !1 });
-let t = document.body, l, a, d, r, o=$orders
+let t = document.body, l, a, d, r, s=t.querySelector("s"), o=$orders
 }

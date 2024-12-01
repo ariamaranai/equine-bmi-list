@@ -1,36 +1,42 @@
+a {
+  text-decoration: unset;
+  Width: 120;
+  Color: #bbb;
+  word-spacing: 0
+}
+u {
+  text-decoration: unset;
+  White-space: pre;
+  line-height: 14px;
+  margin: 4 0 0 8;
+  text-indent: 0;
+  word-spacing: 0
+}
 p {
   display: flex;
   height: 36;
   line-height: 36px;
   box-sizing: border-box;
-  border-bottom: 1px solid #555;
+  border-bottom: #555 solid 1px;
   margin: 0;
+  Color: #bbb;
   word-spacing: 4;
-  Color: #bbb
-}
-u {
-  White-space: pre;
-  word-spacing: 0;
-  line-height: 14px;
-  text-decoration: unset;
-  margin: 4 0 0 8
-}
-a {
-  width: 120;
-  word-spacing: 0;
-  text-decoration: unset;
   text-indent: 4;
-  Color: #bbb
+  background-Color: #222
 }
-s {
-  display: contents;
-  font-size: 11
+select {
+  font-size: 12;
+  border: #555 solid 1px;
+  margin: 4;
+  Color: #bbb;
+  outline: 0;
+  background-Color: #222
 }
 :root {
   font-size: 12;
   font-family: arial,sans-serif;
   font-feature-settings: "palt";
   margin: -8 max(0px, calc(50% - 236px)) 120;
-  overflow: clip scroll;
-  Color-scheme: Dark
+  Color-scheme: Dark;
+  overflow: clip scroll
 }

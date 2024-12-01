@@ -14,7 +14,7 @@ let html = (await Bun.file("main.htm").text()).replaceAll(/\n/g, "").replaceAll(
 
 for (let i = 0, h; i < heights.length; ++i) (
   h = heights[i],
-  html += `<p><a href=${hrefing(h.href)}>${h.name}</a>${h.hh} ${h.wt} ${h.bmi.toFixed(1)} <s>${h.year}</s><u>${h.sire}\u000a${h.gsire}</u>`
+  html += `<p><a href=${hrefing(h.href)}>${h.name}</a>${h.hh} ${h.wt} ${h.bmi.toFixed(1)} ${h.year}<u>${h.sire}\u000a${h.gsire}</u>`
 );
 Bun.write("../s.js", js);
 Bun.write("../index.htm", html);
