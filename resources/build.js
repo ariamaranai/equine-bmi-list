@@ -9,7 +9,7 @@ let years = heights.toSorted((a, b) => a.year - b.year).map(toIndexOf);
 let total = heights.length;
 let orders = `[[0,${wts}],[0,${bmis}],[0,${years}]]`;
 let css = (await Bun.file("main.css").text()).replaceAll(/\n| {2}|\s(?={)|(?<=\:)\s/g, "");
-let js = (await Bun.file("main.js").text()).replaceAll(/(?<!let|new)\s/g, "").replaceAll("$total", total).replace("$orders", orders).replace("elseif", "else if");
+let js = (await Bun.file("main.js").text()).replaceAll(/(?<!let|new)\s/g, "").replaceAll("$total", total).replace("$orders", orders).replace("elseif", "else if").replace("(^|)", "(^| )");
 let html = (await Bun.file("main.htm").text()).replaceAll(/\n/g, "").replaceAll("$total", total).replace("/*css*/", css);
 
 for (let i = 0, h; i < heights.length; ++i) (

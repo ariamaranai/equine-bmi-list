@@ -10,7 +10,7 @@ oninput =e=> {
     while (t.prepend(a[--r]), r);
   else {
     d ??= a.map(e => e.textContent),
-    e = e.value, l = 0;
+    e = e.value.trim().replace(/['.]/g, "").toLowerCase().replace(/(^| )\w/g, e=>e.toUpperCase()) , l = 0;
     while (a[r].setAttribute("style", d[r].includes(e) ? (++l, "") : "display:none"), --r);
     s.textContent = l
   }
