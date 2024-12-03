@@ -9,14 +9,14 @@ oninput =e=> {
   } else if (l == 0)
     while (t.prepend(a[--r]), r);
   else {
-    d ??= a.map(e => e.textContent),
-    e = e.value.trim().replace(/['.]/g, "").toLowerCase().replace(/(^| )\w/g, e=>e.toUpperCase()) , l = 0;
+    d ??= a.map(e => e.textContent.toLowerCase()),
+    e = e.value.trim().replace(/['.]/g, "").toLowerCase(), l = 0;
     while (a[r].setAttribute("style", d[r].includes(e) ? (++l, "") : "display:none"), --r);
     s.textContent = l
   }
 },
 addEventListener("wheel", Number.isInteger(devicePixelRatio) ?
-  e => e.preventDefault(t.scrollTop += e.deltaY > 0 ? 36 - t.scrollTop % 36 || 36 : - t.scrollTop % 36 || -36) :
-  e => e.preventDefault(t.scrollTop += e.deltaY > 0 ? 36 : -36), { passive: !1 });
-let t = document.body, l, a, d, r, s=t.querySelector("s"), o=$orders
+  e => e.preventDefault(scrollBy(0, e.deltaY > 0 ? 36 - t.scrollTop % 36 || 36 : - t.scrollTop % 36 || -36)) :
+  e => e.preventDefault(scrollBy(0 ,e.deltaY > 0 ? 36 : -36)), { passive: !1 });
+let l, t = document.body, a, d, r, s=t.querySelector("s"), o=$orders
 }
