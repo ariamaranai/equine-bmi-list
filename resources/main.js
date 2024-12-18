@@ -1,6 +1,6 @@
-ondragstart =e=> !1;
+ondragstart = e => !1;
 {
-oninput =e=> {
+oninput = e => {
   if (a ??= [...t.children], r = $total, l = (e = e.target).selectedIndex) {
     if (--l < 3)
       while (t.appendChild(a[$orders[l][r]]), --r);
