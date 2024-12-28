@@ -32,11 +32,10 @@ select {
   outline: 0;
   background-Color: #222
 }
-:root {
+body {
   font-size: 12;
   font-family: arial,sans-serif;
   font-feature-settings: "palt";
-  margin: -8 max(0px, calc(50% - 236px)) 120;
-  Color-scheme: Dark;
+  margin: 0 max(0px, calc(50% - 236px)) 120;
   overflow: clip scroll
 }
