@@ -35,7 +35,7 @@ body {
   font-size: 12;
   font-family: arial,sans-serif;
   font-feature-settings: "palt";
-  margin: 0 max(0px, calc(50% - 236px)) 120;
+  margin: 0 max(0px, calc(50% - 236px)) 36;
   overflow: clip scroll;
   background-Color: #000
 }
