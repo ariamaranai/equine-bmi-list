@@ -1,19 +1,22 @@
 a {
   text-decoration: unset;
-  Width: 120;
+  width: 150;
   Color: #bbb;
   word-spacing: 0
 }
-u {
-  text-decoration: unset;
-  White-space: pre;
-  line-height: 14px;
-  margin: 4 0 0 8;
-  text-indent: 0;
+i {
+  line-height: 24px;
+  font-style: unset;
+  contain: size;
+  text-indent: 12;
   word-spacing: 0
+}
+i:last-child {
+  line-height: 48px
 }
 p {
   display: flex;
+  white-space: pre;
   height: 36;
   line-height: 36px;
   border-bottom: #555 solid 1px;
@@ -22,6 +25,11 @@ p {
   word-spacing: 8;
   text-indent: 4;
   background-Color: #111
+}
+s {
+  display: contents;
+  font-family: tahoma,sans-serif;
+  font-size: 9
 }
 select {
   font-size: 12;
@@ -35,7 +43,16 @@ body {
   font-size: 12;
   font-family: arial,sans-serif;
   font-feature-settings: "palt";
-  margin: 0 max(0px, calc(50% - 236px)) 36;
+  margin: 0 max(0px, calc(50% - 220px)) 36;
   overflow: clip scroll;
   background-Color: #000
+}
+[i] {
+  Color: #0ac
+}
+[a] {
+  Color: #c90
+}
+[s] {
+  Color: #8b0
 }
