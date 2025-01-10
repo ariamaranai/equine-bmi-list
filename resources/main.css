@@ -5,14 +5,14 @@ a {
   word-spacing: 0
 }
 i {
-  line-height: 24px;
+  line-height: 20px;
   font-style: unset;
   contain: size;
   text-indent: 12;
   word-spacing: 0
 }
 i:last-child {
-  line-height: 48px
+  line-height: 52px
 }
 p {
   display: flex;
