@@ -31,6 +31,11 @@ s {
   font-family: tahoma,sans-serif;
   font-size: 9
 }
+input {
+  all: unset;
+  flex-grow: 1;
+  word-spacing: 0
+}
 select {
   font-size: 12;
   border: #555 solid 1px;
