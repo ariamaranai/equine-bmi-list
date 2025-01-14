@@ -20,7 +20,7 @@ a {
   text-decoration: unset
 }
 u {
-  width: 108;
+  width: 104;
   word-spacing: 8;
   text-decoration: unset
 }
@@ -54,7 +54,7 @@ input {
 }
 body {
   background-color: #000;
-  font-family: arial,sans-serif;
+  font-family: arial,meiryo,sans-serif;
   font-size: 12;
   font-feature-settings: "palt";
   margin: 0 max(0px, calc(50% - 220px)) 36;
