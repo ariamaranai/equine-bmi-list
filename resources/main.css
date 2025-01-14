@@ -21,7 +21,7 @@ a {
 }
 u {
   width: 120;
-  font-family: verdana,sans-serif;
+  letter-spacing: 1;
   word-spacing: 8;
   text-decoration: unset
 }
