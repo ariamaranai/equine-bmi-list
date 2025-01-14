@@ -1,64 +1,62 @@
 p {
-  display: flex;
-  line-height: 36px;
-  height: 36;
+  background-color: #111;
   border-bottom: #555 solid 1px;
   color: #bbb;
   margin: 0;
-  word-spacing: 8;
-  text-indent: 4;
-  background-color: #111
+  display: flex;
+  height: 36;
+  line-height: 3
 }
-s {
-  text-decoration: unset;
-  color: #aaa;
-  margin-left: 2;
-  font-family: tahoma,sans-serif;
-  font-size: 9
+i {
+  margin-top: 4;
+  white-space: pre;
+  line-height: 14px;
+  font-style: unset
 }
 a {
-  text-decoration: unset;
+  width: 160;
   color: #bbb;
-  width: 150;
-  word-spacing: 0
+  text-indent: 8;
+  text-decoration: unset
+}
+u {
+  width: 108;
+  word-spacing: 8;
+  text-decoration: unset
+}
+s {
+  margin-left: 2;
+  color: #aaa;
+  font-family: tahoma,sans-serif;
+  font-size: 9;
+  text-decoration: unset
+}
+select {
+  background-color: #111;
+  border: #555 solid 1px;
+  color: #bbb;
+  margin: 4;
+  font-size: 12;
+  outline: 0
 }
 [s] {
   background-color: #230
 }
-i {
-  white-space: pre;
-  line-height: 14px;
-  margin: 4 0 0 8;
-  text-indent: 0;
-  font-style: unset;
-  flex-grow: 1;
-  word-spacing: 0
+[a] {
+  background-color: #420
 }
 [i] {
   background-color: #034
 }
 input {
   all: unset;
-  flex-grow: 1;
-  word-spacing: 0
-}
-[a] {
-  background-color: #420
-}
-select {
-  font-size: 12;
-  border: #555 solid 1px;
-  color: #bbb;
-  margin: 4;
-  outline: 0;
-  background-color: #111
+  flex-grow: 1
 }
 body {
-  font-size: 12;
+  background-color: #000;
   font-family: arial,sans-serif;
+  font-size: 12;
   font-feature-settings: "palt";
   margin: 0 max(0px, calc(50% - 220px)) 36;
-  overflow: clip scroll;
-  background-color: #000
+  overflow: clip scroll
 }
-
