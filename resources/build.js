@@ -23,12 +23,13 @@ let toMstnAttr = v => v == "CC" ? " a" : v == "CT" ? " s" : v == "TT" ? " i" : "
 
 for (let i = 0; i < heights.length; ++i) {
   let {name, year, hh, wt, bmi, href, sire, gsire, mstn} = heights[i];
-  html += `<p><a href=${
+  html += `<p${toMstnAttr(mstn[0])}><a href=${
     href[12] == "j"
       ? href.slice(-11)
       : "//www.pedigreequery.com/" +
         href.slice(30).split("+").map(v => v[0].toUpperCase() + v.slice(1)).join("+")
-  }${toMstnAttr(mstn[0])}>${name}<s> (${year})</s></a>${hh} ${wt} ${bmi.toFixed(1)}<i${toMstnAttr(mstn[1])}>${sire}</i><i${toMstnAttr(mstn[2])}>${gsire}</i>`
+  }>${name}<s>(${year})</s></a>${hh} ${wt} ${bmi.toFixed(1)}<i>${sire}
+${gsire}</i>`
 }
 Bun.write("../s.js", js);
 Bun.write("../index.htm", html);
