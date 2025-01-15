@@ -8,9 +8,9 @@ p {
   line-Height: 3
 }
 b {
-  width: 120;
+  width: 108;
   color: #aaa;
-  word-spacing: 8;
+  word-spacing: 4;
   letter-spacing: 1
 }
 i {
@@ -21,8 +21,8 @@ i {
 }
 a {
   width: 160;
-  color: #bbb;
   text-indent: 8;
+  font-Weight: 700;
   text-decoration: unset
 }
 s {
@@ -30,6 +30,7 @@ s {
   color: #aaa;
   font-family: tahoma,sans-serif;
   font-size: 9;
+  font-weight: 400;
   text-decoration: unset
 }
 select {
@@ -60,4 +61,7 @@ body {
   font-feature-settings: "palt";
   margin: 0 max(0px, calc(50% - 220px)) 36;
   overflow: clip scroll
+}
+html {
+  color-scheme: dark
 }
