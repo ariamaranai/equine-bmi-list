@@ -28,8 +28,8 @@ for (let i = 0; i < heights.length; ++i) {
       ? href.slice(-11)
       : "//www.pedigreequery.com/" +
         href.slice(30).split("+").map(v => v[0].toUpperCase() + v.slice(1)).join("+")
-  }>${name}<s>(${year})</s></a><b>${hh} ${wt} ${bmi.toFixed(1)}</b><i>${sire}
-${gsire}</i>`
+  }>${name}<s>(${year})</s></a><b>${hh} ${wt} ${bmi.toFixed(1)}</b>${sire}
+${gsire}`
 }
 Bun.write("../s.js", js);
 Bun.write("../index.htm", html);

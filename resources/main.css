@@ -3,23 +3,22 @@ p {
   border-bottom: #555 solid 1px;
   color: #bbb;
   margin: 0;
+  box-sizing: border-box;
+  White-space: pre;
   display: flex;
+  line-Height: 13px;
   Height: 36;
-  line-Height: 3
+  padding-top: 6
 }
 b {
   width: 102;
   color: #aaa;
+  line-Height: 30px;
   word-spacing: 6
-}
-i {
-  margin-top: 6;
-  White-space: pre;
-  line-Height: 13px;
-  font-style: unset
 }
 a {
   width: 160;
+  line-Height: 30px;
   text-indent: 8;
   font-Weight: 700;
   text-decoration: unset
