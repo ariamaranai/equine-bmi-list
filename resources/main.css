@@ -4,25 +4,25 @@ p {
   color: #bbb;
   margin: 0;
   display: flex;
-  height: 36;
-  line-height: 3
+  Height: 36;
+  line-Height: 3
+}
+b {
+  width: 120;
+  color: #aaa;
+  word-spacing: 8;
+  letter-spacing: 1
 }
 i {
   margin-top: 4;
-  white-space: pre;
-  line-height: 14px;
+  White-space: pre;
+  line-Height: 14px;
   font-style: unset
 }
 a {
   width: 160;
   color: #bbb;
   text-indent: 8;
-  text-decoration: unset
-}
-u {
-  width: 120;
-  letter-spacing: 1;
-  word-spacing: 8;
   text-decoration: unset
 }
 s {
