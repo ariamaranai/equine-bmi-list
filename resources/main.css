@@ -35,7 +35,7 @@ select {
   background-color: #111;
   border: #555 solid 1px;
   color: #bbb;
-  margin: 4;
+  margin: 0 4 4;
   font-size: 12;
   outline: 0
 }
