@@ -13,7 +13,7 @@ b {
   word-spacing: 6
 }
 i {
-  margin-top: 5;
+  margin-top: 6;
   White-space: pre;
   line-Height: 13px;
   font-style: unset
@@ -29,7 +29,7 @@ s {
   color: #aaa;
   font-family: tahoma,sans-serif;
   font-size: 10;
-  font-weight: 400;
+  font-Weight: 400;
   text-decoration: unset
 }
 select {
