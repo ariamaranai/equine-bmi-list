@@ -8,15 +8,14 @@ p {
   line-Height: 3
 }
 b {
-  width: 108;
+  width: 102;
   color: #aaa;
-  word-spacing: 4;
-  letter-spacing: 1
+  word-spacing: 6
 }
 i {
-  margin-top: 4;
+  margin-top: 5;
   White-space: pre;
-  line-Height: 14px;
+  line-Height: 13px;
   font-style: unset
 }
 a {
@@ -29,7 +28,7 @@ s {
   margin-left: 2;
   color: #aaa;
   font-family: tahoma,sans-serif;
-  font-size: 9;
+  font-size: 10;
   font-weight: 400;
   text-decoration: unset
 }
