@@ -1,4 +1,5 @@
 import heights from "../../equine-lib/bmi.json";
+import mstns from "../../equine-lib/mstn-tb.json";
 
 let hrefs = heights.map(v => v.href);
 let toIndexOf = v => hrefs.indexOf(v.href) + 1;
@@ -19,7 +20,22 @@ let html = (await Bun.file("main.htm").text())
   .replaceAll("\n", "")
   .replaceAll("$total", total)
   .replace("/*css*/", css);
-let toMstnAttr = v => v == "CC" ? " a" : v == "CT" ? " s" : v == "TT" ? " i" : "";
+let toMstnAttr = v =>
+  v == "CC" ? " a" :
+  v == "CT" ? " s" :
+  v == "TT" ? " i" : "";
+
+let _mstns = mstns.filter(v => v[0].sex == "S" && v[0].name != "-" &&
+  v[0].mstn == "CC" || v[0].mstn == "CT" || v[0].mstn == "TT"
+).map(v => v[0]);
+let _mstnNames = _mstns.map(v => v.name);
+let _mstnsSearch = (name, mstn) => {
+  let idx = _mstnNames.indexOf(name);
+  if (idx >= 0)
+    mstn != _mstns[idx].mstn && console.log(name);
+  else
+    mstn != "--" && console.log(name);
+}
 
 for (let i = 0; i < heights.length; ++i) {
   let {name, year, hh, wt, bmi, href, sire, gsire, mstn} = heights[i];
@@ -29,7 +45,10 @@ for (let i = 0; i < heights.length; ++i) {
       : "//www.pedigreequery.com/" +
         href.slice(30).split("+").map(v => v[0].toUpperCase() + v.slice(1)).join("+")
   }>${name}<s>(${year})</s></a><b>${hh} ${wt} ${bmi.toFixed(1)}</b>${sire}
-${gsire}`
+${gsire}`;
+  _mstnsSearch(name, mstn[0]);
+  _mstnsSearch(sire, mstn[1]);
+  _mstnsSearch(gsire, mstn[2]);
 }
 Bun.write("../s.js", js);
 Bun.write("../index.htm", html);
