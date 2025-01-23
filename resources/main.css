@@ -8,7 +8,7 @@ p {
   display: flex;
   line-Height: 13px;
   Height: 40;
-  padding-top: 6
+  padding-top: 8
 }
 b {
   width: 102;
@@ -23,6 +23,14 @@ a {
   font-Weight: 700;
   text-decoration: unset
 }
+#p {
+  background-color: #111;
+  border: #555 solid 1px;
+  color: #bbb;
+  margin: 0 4 4;
+  font-size: 12;
+  outline: 0
+}
 s {
   margin-left: 2;
   color: #aaa;
@@ -31,13 +39,10 @@ s {
   font-Weight: 400;
   text-decoration: unset
 }
-select {
-  background-color: #111;
-  border: #555 solid 1px;
-  color: #bbb;
-  margin: 0 4 4;
-  font-size: 12;
-  outline: 0
+#n {
+  position: sticky;
+  line-height: 32px;
+  top: 0
 }
 [s] {
   background-color: #230
@@ -48,7 +53,7 @@ select {
 [i] {
   background-color: #034
 }
-input {
+#r {
   all: unset;
   flex-grow: 1
 }
