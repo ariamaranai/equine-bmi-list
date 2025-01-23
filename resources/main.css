@@ -7,7 +7,7 @@ p {
   White-space: pre;
   display: flex;
   line-Height: 13px;
-  Height: 36;
+  Height: 40;
   padding-top: 6
 }
 b {
@@ -57,7 +57,7 @@ body {
   font-family: arial,sans-serif;
   font-size: 12;
   font-feature-settings: "palt";
-  margin: 0 max(0px,calc(50% - 220px)) 36;
+  margin: 0 max(0px,calc(50% - 220px)) 40;
   overflow: clip scroll
 }
 html {
