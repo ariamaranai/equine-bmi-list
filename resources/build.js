@@ -24,17 +24,17 @@ let toMstnAttr = v =>
   v == "CC" ? " a" :
   v == "CT" ? " s" :
   v == "TT" ? " i" : "";
-
-let _mstns = mstns.filter(v => v[0].sex == "S" && v[0].name != "-" &&
-  v[0].mstn == "CC" || v[0].mstn == "CT" || v[0].mstn == "TT"
-).map(v => v[0]);
+let _mstns = mstns.map(v => v[0]).filter(v =>
+  v.sex == "S" &&
+  v.name != "-" &&
+  v.mstn == "CC" ||
+  v.mstn == "CT" ||
+  v.mstn == "TT"
+);
 let _mstnNames = _mstns.map(v => v.name);
 let _mstnsSearch = (name, mstn) => {
   let idx = _mstnNames.indexOf(name);
-  if (idx >= 0)
-    mstn != _mstns[idx].mstn && console.log(name);
-  else
-    mstn != "--" && console.log(name);
+  (mstn != (idx >= 0 ? _mstns[idx].mstn : "--")) && console.log(name);
 }
 
 for (let i = 0; i < heights.length; ++i) {
