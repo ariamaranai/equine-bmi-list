@@ -14,6 +14,7 @@ let js = (await Bun.file("main.js").text())
   .replaceAll("$total", total)
   .replace("$orders", orders)
   .replace("elseif", "else if")
+  .replace("elsewhile", "else while")
   .replace("elsel", "else l")
   .replace("(^|)", "(^| )");
 let html = (await Bun.file("main.htm").text())
