@@ -11,7 +11,7 @@ ondragstart = e => !1;
         while (n.after(a[r]), --r);
   },
   r.oninput = e => {
-    let r = $total, l = e.target.value.toLowerCase().replace(/[^-\u0020a-z\u30a1-\u30fc]/g, ""), i = 0;
+    let r = $total, l = e.target.value.toLowerCase().replace(/[^-\u0020a-z0-9\u30a1-\u30fc]/g, ""), i = 0;
     if (l) {
       d ??= (a ??= [...t.children]).map(e => e.textContent.toLowerCase());
       while (a[r].setAttribute("style", d[r].includes(l) ? (++i, "") : "display:none"), --r);
