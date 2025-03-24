@@ -19,6 +19,7 @@ b {
 }
 a {
   width: 160;
+  color: #99e;
   line-Height: 30px;
   text-indent: 8;
   font-Weight: 700;
@@ -64,9 +65,8 @@ body {
   font-size: 12;
   font-feature-settings: "palt";
   margin: 0 max(0px,calc(50% - 220px)) 40;
-  text-transform: capitalize;
-  overflow: clip scroll
+  text-transform: capitalize
 }
-html {
-  color-scheme: dark
+:root {
+  scrollbar-gutter: stable
 }

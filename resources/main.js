@@ -17,7 +17,7 @@ ondragstart = e => !1;
       while (a[r].setAttribute("style", d[r].includes(l) ? (++i, "") : "display:none"), --r);
       s.textContent = i
     } else {
-      while (a[r].style = "", --r);
+      while (a[--r].style = "", r);
       s.textContent = $total
     }
   },
