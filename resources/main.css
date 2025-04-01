@@ -3,6 +3,7 @@ p {
   border-bottom: #555 solid 1px;
   color: #bbb;
   margin: 0;
+  content-visibility: auto;
   box-sizing: border-box;
   white-space: pre;
   display: flex;
