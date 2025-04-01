@@ -3,7 +3,6 @@ p {
   border-bottom: #555 solid 1px;
   color: #bbb;
   margin: 0;
-  content-visibility: auto;
   box-sizing: border-box;
   white-space: pre;
   display: flex;
@@ -12,7 +11,7 @@ p {
   padding-top: 8
 }
 b {
-  width: 102;
+  width: 104;
   color: #aaa;
   font-size: 13;
   line-Height: 30px;
@@ -44,6 +43,7 @@ s {
 }
 #n {
   position: sticky;
+  z-index: 3;
   line-Height: 32px;
   top: 0
 }
