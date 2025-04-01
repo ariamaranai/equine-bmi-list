@@ -16,7 +16,7 @@ ondragstart = e => !1;
       d ??= (a ??= [...t.children]).map(e => e.textContent);
       while (a[r].setAttribute("style", d[r].includes(l) ? (++i, "") : "display:none"), --r);
       s.textContent = i
-    } else {
+    } else if (a) {
       while (a[--r].style = "", r);
       s.textContent = $total
     }
