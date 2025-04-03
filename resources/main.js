@@ -5,7 +5,7 @@ ondragstart = e => !1;
     if (l > 3)
       location.href = "//ariamaranai.github.io";
     else
-      if (a ??= [...t.children], l--)
+      if (a ??= [...t.childNodes], l--)
         while (t.appendChild(a[$orders[l][r]]), --r);
       else
         while (n.after(a[r]), --r);
@@ -13,7 +13,7 @@ ondragstart = e => !1;
   r.oninput = e => {
     let r = $total, l = e.target.value.toLowerCase().replace(/[^-\u0020\w\u30a1-\u30fc]/g, ""), i = 0;
     if (l) {
-      d ??= (a ??= [...t.children]).map(e => e.textContent);
+      d ??= (a ??= [...t.childNodes]).map(e => e.textContent);
       while (a[r].setAttribute("style", d[r].includes(l) ? (++i, "") : "display:none"), --r);
       s.textContent = i
     } else if (a) {
