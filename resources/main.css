@@ -1,7 +1,7 @@
 p {
   background-color: #111;
   border-bottom: #555 solid 1px;
-  color: #bbb;
+  color: #ccc;
   margin: 0;
   box-sizing: border-box;
   white-space: pre;
@@ -12,14 +12,14 @@ p {
 }
 b {
   width: 104;
-  color: #aaa;
+  color: #bbb;
   font-size: 13;
   line-Height: 30px;
   word-spacing: 6
 }
 a {
   width: 160;
-  color: #99e;
+  color: #aaf;
   line-Height: 30px;
   text-indent: 8;
   font-Weight: 700;
@@ -28,14 +28,14 @@ a {
 #p {
   background-color: #111;
   border: #555 solid 1px;
-  color: #bbb;
+  color: #ccc;
   margin: 0 4 4;
   font-size: 12;
   outline: 0
 }
 s {
   margin-left: 2;
-  color: #aaa;
+  color: #bbb;
   font-family: tahoma,sans-serif;
   font-size: 10;
   font-Weight: 400;
