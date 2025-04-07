@@ -3,48 +3,36 @@ p {
   border-bottom: #555 solid 1px;
   color: #bbb;
   margin: 0;
+  display: flex;
+  content-visibility: auto;
   box-sizing: border-box;
   white-space: pre;
-  display: flex;
-  line-Height: 13px;
-  Height: 40;
-  padding-top: 8
+  padding-top: 8;
+  line-Height: 16px;
+  Height: 48
 }
 b {
   width: 104;
-  color: #aaa;
-  font-size: 13;
-  line-Height: 30px;
-  word-spacing: 6
+  word-spacing: 6;
+  font-Weight: unset
 }
 a {
-  width: 160;
-  color: #99e;
-  line-Height: 30px;
-  text-indent: 8;
-  font-Weight: 700;
+  width: 140;
+  padding-left: 8;
+  color: #bbb;
   text-decoration: unset
 }
 #p {
   background-color: #111;
   border: #555 solid 1px;
   color: #bbb;
-  margin: 0 4 4;
-  font-size: 12;
+  margin: 0 4 8;
   outline: 0
-}
-s {
-  margin-left: 2;
-  color: #aaa;
-  font-family: tahoma,sans-serif;
-  font-size: 10;
-  font-Weight: 400;
-  text-decoration: unset
 }
 #n {
   position: sticky;
-  z-index: 3;
-  line-Height: 32px;
+  z-index: 8;
+  line-Height: 40px;
   top: 0
 }
 [s] {
@@ -62,10 +50,10 @@ s {
 }
 body {
   background-color: #000;
-  font-family: arial,sans-serif;
   font-size: 12;
+  font-family: arial,sans-serif;
   font-feature-settings: "palt";
-  margin: 0 max(0px,calc(50% - 220px)) 40;
   text-transform: capitalize;
-  overflow-y: scroll
+  overflow-y: scroll;
+  margin: 0 max(0px,calc(50% - 220px)) 48
 }

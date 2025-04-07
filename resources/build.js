@@ -46,7 +46,8 @@ for (let i = 0; i < heights.length; ++i) {
       : "//www.pedigreequery.com/" +
         // href.slice(30).split("+").map(v => v[0].toUpperCase() + v.slice(1)).join("+")
         href.slice(30)
-  }>${name.toLowerCase()}<s>(${year})</s></a><b>${hh} ${wt} ${bmi.toFixed(1)}</b>${sire.toLowerCase()}
+  }>${name.toLowerCase()}
+${year}</a><b>${hh} ${wt} ${bmi.toFixed(1)}</b>${sire.toLowerCase()}
 ${dsire.toLowerCase()}`;
   _mstnsSearch(name, mstn[0]);
   _mstnsSearch(sire, mstn[1]);
