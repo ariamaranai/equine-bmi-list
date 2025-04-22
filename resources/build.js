@@ -2,12 +2,12 @@ import heights from "../../equine-lib/bmi.json";
 import mstns from "../../equine-lib/mstn-tb.json";
 
 let hrefs = heights.map(v => v.href);
-let toIndexOf = v => hrefs.indexOf(v.href) + 1;
-let wts = heights.toSorted((a, b) => b.wt - a.wt || -1).map(toIndexOf);
-let bmis = heights.toSorted((a, b) => b.bmi - a.bmi || -1).map(toIndexOf);
-let years = heights.toSorted((a, b) => a.year - b.year || -1).map(toIndexOf);
+let toIndexOf = v => hrefs.indexOf(v.href);
+let wts = heights.toSorted((a, b) => a.wt - b.wt || -1).map(toIndexOf);
+let bmis = heights.toSorted((a, b) => a.bmi - b.bmi || -1).map(toIndexOf);
+let years = heights.toSorted((a, b) => b.year - a.year || -1).map(toIndexOf);
 let total = heights.length;
-let orders = `[[0,${wts}],[0,${bmis}],[0,${years}]]`;
+let orders = `[[${wts}],[${bmis}],[${years}]]`;
 let css = (await Bun.file("main.css").text()).replace(/\n| {2}|\s(?={)|(?<=\:)\s/g, "");
 let js = (await Bun.file("main.js").text())
   .replace(/(?<!let|new)\s/g, "")
