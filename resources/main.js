@@ -15,7 +15,7 @@ ondragstart = e => !1;
     if (l) {
       while (a[r].className = d[r].includes(l) ? (++i, "") : "a", ++r < $total);
       s.textContent = i
-    } else if (a) {
+    } else {
       while (a[r].className = "", ++r < $total);
       s.textContent = $total
     }
