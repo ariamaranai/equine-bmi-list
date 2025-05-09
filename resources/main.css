@@ -7,17 +7,18 @@ p {
   content-visibility: auto;
   box-sizing: border-box;
   white-space: pre;
-  padding-top: 8;
+  padding: 8 0 0 8;
   line-Height: 16px;
   Height: 48
 }
 b {
   width: 104;
+  line-Height: 24px;
   word-spacing: 6
 }
 a {
   width: 140;
-  padding-left: 8;
+  font-size: 11;
   color: #bbb;
   text-decoration: unset
 }
@@ -46,6 +47,9 @@ a {
 #r {
   all: unset;
   flex-grow: 1
+}
+:first-line {
+  font-size: 13
 }
 body {
   background-color: #000;
