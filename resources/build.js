@@ -39,13 +39,11 @@ let _mstnsSearch = (name, mstn) => {
 }
 
 for (let i = 0; i < heights.length; ++i) {
-  let {name, year, hh, wt, bmi, href, sire, dsire, mstn} = heights[i];
+  let { name, year, hh, wt, bmi, href, sire, dsire, mstn } = heights[i];
   html += `<p${toMstnAttr(mstn[0])}><a href=${
     href[12] == "j"
       ? href.slice(-11)
-      : "//www.pedigreequery.com/" +
-        // href.slice(30).split("+").map(v => v[0].toUpperCase() + v.slice(1)).join("+")
-        href.slice(30)
+      : "//www.pedigreequery.com/" + href.slice(30)
   }>${name.toLowerCase()}
 ${year}</a><b>${hh} ${wt} ${bmi.toFixed(1)}</b>${sire.toLowerCase()}
 ${dsire.toLowerCase()}`;
@@ -53,6 +51,7 @@ ${dsire.toLowerCase()}`;
   _mstnsSearch(sire, mstn[1]);
   _mstnsSearch(dsire, mstn[2]);
 }
+
 Bun.write("../s.js", js);
 Bun.write("../index.htm", html);
 console.log(`html size: ${Bun.gzipSync(Buffer.from(html)).length}`);
