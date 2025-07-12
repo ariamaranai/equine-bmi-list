@@ -5,10 +5,7 @@ ondragstart = e => !1;
     if (l > 3)
       location.href = "//ariamaranai.github.io";
     else
-      if (l--)
-        while (t.appendChild(a[$orders[l][r]]), ++r < $total);
-      else
-        while (n.after(a[r]), ++r < $total);
+      while (t.appendChild(a[l ? $orders[l - 1][r] : r]), ++r < $total);
   },
   r.oninput = e => {
     let r = 0, l = e.target.value.toLowerCase().replace(/[^-\u0020\w\u30a1-\u30fc]/g, ""), i = 0;
