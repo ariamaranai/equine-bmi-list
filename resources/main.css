@@ -1,6 +1,6 @@
 p {
   background-color: #111;
-  border-bottom: #555 solid 1px;
+  border-bottom: 1px solid#555;
   color: #bbb;
   margin: 0;
   display: flex;
@@ -18,7 +18,7 @@ b {
 }
 #p {
   background-color: #111;
-  border: #555 solid 1px;
+  border: 1px solid#555;
   color: #bbb;
   margin: 8 4;
   outline: 0
