@@ -8,13 +8,13 @@ ondragstart = e => !1;
       while (t.appendChild(a[l ? $orders[l - 1][r] : r]), ++r < $total);
   },
   r.oninput = e => {
-    let r = 0, l = e.target.value.toLowerCase().replace(/[^\w\x20-\u30a1-\u30fc]/g, ""), i = 0;
+    let r = 0, l = e.target.value.toLowerCase().replace(/[^\w-\x20\u30a1-\u30fc]/g, ""), i = 0;
     if (l) {
       while (a[r].className = d[r].includes(l) ? (++i, "") : "a", ++r < $total);
       s.textContent = i
     } else {
       while (a[r].className = "", ++r < $total);
-      s.textContent = $total
+      s.textContent = "$total"
     }
   },
   addEventListener("wheel", e => {
