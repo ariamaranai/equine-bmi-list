@@ -52,7 +52,7 @@ ${dsire.toLowerCase()}`;
   _mstnsSearch(dsire, mstn[2]);
 }
 
-Bun.write("../.js", js);
+Bun.write("../s.js", js);
 Bun.write("../index.htm", html);
 console.log(`html size: ${Bun.gzipSync(Buffer.from(html)).length}`);
 console.log(`js size: ${Bun.gzipSync(Buffer.from(js)).length}`);
