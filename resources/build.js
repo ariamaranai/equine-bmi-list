@@ -45,7 +45,7 @@ for (let i = 0; i < heights.length; ++i) {
       ? href.slice(-11)
       : "//www.pedigreequery.com/" + href.slice(30)
   }>${name.toLowerCase()}
-${year}</a><b>${hh} ${wt} ${bmi.toFixed(1)}</b>${sire.toLowerCase()}
+${year}</a><u>${hh} ${wt} ${bmi.toFixed(1)}</u>${sire.toLowerCase()}
 ${dsire.toLowerCase()}`;
   _mstnsSearch(name, mstn[0]);
   _mstnsSearch(sire, mstn[1]);
