@@ -13,14 +13,9 @@ p {
 }
 u {
   word-spacing: 6;
+  line-Height: 20px;
   text-decoration: unset;
-  width: 108
-}
-:any-link {
-  font-size: 11;
-  color: #bbb;
-  text-decoration: unset;
-  width: 140
+  width: 112
 }
 #p {
   background-color: #111;
@@ -47,17 +42,24 @@ u {
 :first-line {
   font-size: 13.5
 }
-#r {
-  all: unset;
-  flex-grow: 1
+:any-link {
+  font-size: 11;
+  color: #bbb;
+  text-decoration: unset;
+  width: 140
 }
 body {
   background-color: #000;
   font-size: 13;
-  font-family: system-ui;
+  font-family: arial,sans-serif;
+  font-feature-settings: "palt";
   text-transform: capitalize;
   overflow-y: scroll;
   margin: 0 max(0px,calc(50% - 240px)) 48
+}
+#r {
+  all: unset;
+  flex-grow: 1
 }
 .a {
   display: none
