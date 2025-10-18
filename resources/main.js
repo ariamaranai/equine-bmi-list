@@ -17,9 +17,9 @@ ondragstart = e => !1;
       s.textContent = "$total"
     }
   },
-  addEventListener("wheel", e => {
+  onwheel = e => {
     let r = t.scrollTop % 48;
-    e.preventDefault(scrollBy(0, e.deltaY > 0 ? r < 1 ? 48 : 48 - r : r < 1 ? -48 : -r));
-  }, { passive: !1 });
+    e.preventDefault(scrollBy(0, e.deltaY > 0 ? r < 1 ? 48 : 48 - r : r < 1 ? -48 : -r))
+  };
   let t = document.body, a = [...t.childNodes], s = (a.shift(), r.nextSibling), d = a.map(e => e.textContent)
 }
