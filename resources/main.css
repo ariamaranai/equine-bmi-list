@@ -53,11 +53,11 @@ body {
   font-size: 13;
   font-family: arial,sans-serif;
   font-feature-settings: "palt";
-  max-width: 480px;
   text-transform: capitalize;
-  width: 100%;
   margin: 0 auto;
-  overflow-y: scroll
+  overflow-y: scroll;
+  width: 100%;
+  max-width: 480
 }
 #r {
   all: unset;
