@@ -56,7 +56,6 @@ body {
   text-transform: capitalize;
   margin: 0 auto;
   overflow-y: scroll;
-  width: 100%;
   max-width: 480
 }
 #r {
