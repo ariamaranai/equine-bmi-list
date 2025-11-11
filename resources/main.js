@@ -18,8 +18,8 @@ ondragstart = e => !1;
     }
   },
   addEventListener("wheel", e => {
-    let r = t.scrollTop % 48;
-    e.preventDefault(scrollBy(0, e.deltaY > 0 ? r < 1 ? 48 : 48 - r : r < 1 ? -48 : -r))
+    let r = t.scrollTop % 60;
+    e.preventDefault(scrollBy(0, e.deltaY > 0 ? r ? 60 - r : 60 : r ? -r : -60))
   }, { passive: !1 });
   let t = document.body, a = [...t.childNodes], s = (a.shift(), r.nextSibling), d = a.map(e => e.textContent)
 }
