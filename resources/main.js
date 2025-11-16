@@ -9,8 +9,9 @@ ondragstart = e => !1;
       while (t.appendChild(a[l ? $orders[l - 1][r] : r]), ++r < $total);
   },
   r.oninput = e => {
-    let r = 0, l = e.target.value.toLowerCase().replace(/[^-\w \u30a1-\u30fc]/g, ""), i = 0;
+    let r = 0, l = e.target.value.toLowerCase().replace(/[^-\w \u30a1-\u30fc]/g, "");
     if (l) {
+      let i = 0;
       while (a[r].className = d[r].includes(l) ? (++i, "") : "a", ++r < $total);
       s.textContent = i
     } else {
