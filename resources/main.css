@@ -55,9 +55,9 @@ body {
   font-family: arial,sans-serif;
   font-feature-settings: "palt";
   text-transform: capitalize;
-  margin: 0 auto;
   overflow-y: scroll;
-  max-width: 480
+  max-width: 480;
+  margin: 0 auto 60
 }
 #r {
   all: unset;
