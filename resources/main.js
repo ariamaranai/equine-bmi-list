@@ -6,16 +6,16 @@ ondragstart = e => !1;
     if (l > 3)
       location.href = "//ariamaranai.github.io";
     else
-      while (t.appendChild(a[l ? $orders[l - 1][r] : r]), ++r < $total);
+      while (r < a.length) t.appendChild(a[l ? $orders[l - 1][r] : r]), ++r;
   },
   r.oninput = e => {
     let r = 0, l = e.target.value.toLowerCase().replace(/[^-\w \u30a1-\u30fc]/g, "");
     if (l) {
       let i = 0;
-      while (a[r].className = d[r].includes(l) ? (++i, "") : "a", ++r < $total);
+      while (r < a.length) a[r].className = d[r].includes(l) ? (++i, "") : "a", ++r;
       s.textContent = i
     } else {
-      while (a[r].className = "", ++r < $total);
+      while (r < a.length) a[r].className = "", ++r;
       s.textContent = "$total"
     }
   };
