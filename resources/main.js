@@ -1,4 +1,4 @@
-addEventListener("wheel", e => e.preventDefault(scrollBy(0, e.deltaY > 0 ? 60 : -60)), { passive: !1 }),
+addEventListener("wheel", e => e.preventDefault(scrollBy(0, e.deltaY > 0 ? 60 : -60)), { passive: 0 }),
 ondragstart = e => !1;
 {
   p.oninput = e => {
